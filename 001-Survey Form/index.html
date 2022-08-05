@@ -17,16 +17,17 @@
 
     <form action="result.html">
         <label for="name">Name</label><br>
-        <input type="text" name="Name" id="name" placeholder="enter your name"><br><br>
+        <input type="text" name="Name" id="name" placeholder="enter your name" required><br><br>
 
         <label for="sname">Surname</label><br>
-        <input type="text" name="Surname" id="sname" placeholder="enter your surname"><br><br>
+        <input type="text" name="Surname" id="sname" placeholder="enter your surname" required><br><br>
 
         <label for="email">Email</label><br>
-        <input type="email" name="email" id="email" placeholder="user@clarusway.com"><br><br>
+        <input type="email" name="email" id="email" placeholder="user@clarusway.com" required><br><br>
 
         <label for="cr">Which option best describes your current role</label><br>
-        <select name="Current Role" id="cr" size="4">
+        <select name="Current Role" id="cr">
+            <option disabled selected value>Select current role</option>
             <option value="Full-Stack">Full-Stack</option>
             <option value="Data Science">Data Science</option>
             <option value="AWS">Amazon Web Service</option>
@@ -53,6 +54,7 @@
 
         <label for="cr">Whats your favorite feature of Clarusway</label><br>
         <select name="Favorite Feature" id="ff" size="1">
+            <option disabled selected value>Select an option</option>
             <option value="LMS">LMS</option>
             <option value="CMS">CMS</option>
             <option value="Flip Grid">Flip Grid</option>
